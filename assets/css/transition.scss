@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  body {
+    background: linear-gradient(to right, black 25%, #1d1515, black 75%);
+    display: grid;
+    justify-items: center;
+    perspective: 600px;
+    perspective-origin: center center;
+    // Previously JS was needed, but with body { height: 100% } instead of body { height: 100vh }, it works!
+    // perspective-origin: center calc((var(--s, 1) * 1px) + 50%);
+  }
+  
+  .box {
+    background: linear-gradient(to right, white 70%, #b9b0b0);
+    width: 100vw;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: translateX(-50%) rotateY(65deg);
+    transform-origin: right center;
+  }
+  
+  .box2 {
+    background: linear-gradient(to left, white 70%, #b9b0b0);
+    transform: translateX(50%) rotateY(-65deg);
+    transform-origin: left center;
+  }

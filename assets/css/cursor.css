@@ -1,0 +1,10 @@
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    position: fixed; /* Ensures the cursor stays in the same position relative to the viewport */
+    pointer-events: none; /* Prevents the cursor from interfering with other elements */
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s, transform 0.2s, width 0.2s, height 0.2s, border 0.2s;
+    z-index: 10000;
+}

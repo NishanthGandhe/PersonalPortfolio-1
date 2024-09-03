@@ -1,0 +1,44 @@
+/* html {
+  height: 100%;
+  overflow: hidden;
+} */
+
+.transition-section {
+  height: 2000px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: linear-gradient(to right, #1e304f 25%, #1d1515, #1e304f 75%);
+  display: grid;
+  justify-items: center;
+  perspective: 600px;
+  perspective-origin: center center;
+  opacity: 1;
+}
+.dark-mode .transition-section{
+  height: 2000px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: linear-gradient(to right, black 25%, #1d1515, black 75%);
+  display: grid;
+  justify-items: center;
+  perspective: 600px;
+  perspective-origin: center center;
+  opacity: 1;
+}
+
+.box {
+  background: linear-gradient(to right, white 70%, #b9b0b0);
+  width: 100vw;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: translateX(-50%) rotateY(65deg);
+  transform-origin: right center;
+}
+
+.box2 {
+  background: linear-gradient(to left, white 70%, #b9b0b0);
+  transform: translateX(50%) rotateY(-65deg);
+  transform-origin: left center;
+}
+
+/*# sourceMappingURL=transition.css.map */

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/toggle.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/transition.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <script src="https://kit.fontawesome.com/98c235c84b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bar">
+        <div class="circle"></div>
+        <p>Loading</p>
+    </div>
+    <div id="main-content" style="display: none;">
+        <header>
+            <div class="brand">
+                <h1>Nishanth Gandhe</h1>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const headline = document.querySelector("h1");
+                        headline.addEventListener("animationend", function(event) {
+                            if (event.animationName === "typewriter") {
+                                headline.style.borderRight = "none"; // Remove the cursor effect
+                            }
+                        });
+                    });
+                    </script>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <div class="toggleWrapper">
+                            <input type="checkbox" class="dn" id="dn"/>
+                            <label for="dn" class="toggle">
+                                <span class="toggle__handler">
+                                    <span class="crater crater--1"></span>
+                                    <span class="crater crater--2"></span>
+                                    <span class="crater crater--3"></span>
+                                </span>
+                                <span class="star star--1"></span>
+                                <span class="star star--2"></span>
+                                <span class="star star--3"></span>
+                                <span class="star star--4"></span>
+                                <span class="star star--5"></span>
+                                <span class="star star--6"></span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="home-section">
+                <div class="text">
+                    <span class="subheading">Howdy!</span>
+                    <h2 style="text-align: center;">I'm Nishanth Gandhe </h2>
+                    <p class="intro">A Computer Science student at Texas A&M University with a strong interest in data analytics, cybersecurity, and AI-driven development. My experience spans various projects and internships, where I've applied my skills in programming languages like Python, C#, and Angular to tackle real-world problems and innovate solutions.</p>
+                    <div class=button-row style="text-align: center;">
+                        <a href="#about" class="btn">Learn More</a>
+                        <a href="https://www.linkedin.com/in/nishanthgandhe/" class="btn">Linkedin</a>
+                    </div>
+                </div>
+                <p></p>
+                <div class="image-container">
+                    <img src="/Users/nishanthgandhe/Downloads/UpdatedPersonalWebsite/assets/images/bg_1.png" alt="Your Picture">
+                </div>
+            </section>
+            <section class="about-section" id="about">
+                <div class="container">
+                    <div class="about-row">
+                        <div class="about-image">
+                            <img src="/Users/nishanthgandhe/Downloads/UpdatedPersonalWebsite/assets/images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="heading-section">
+                                <div class="word">
+                                    <span>A</span>
+                                    <span>B</span>
+                                    <span>O</span>
+                                    <span>U</span>
+                                    <span>T</span>
+                                    <span></span>
+                                </div> 
+                                <div class="word">
+                                    <span>M</span>
+                                    <span>E</span>
+                                </div>                                    
+                                <p>Howdy! I am a sophomore at Texas A&M pursuing a Bachelor of Science in Computer Science and currently a member of the Engineering Honors Program. 
+                                    I also plan on adding to my technical expertise with a minor in statistics to better delve into data analytics and more real-world applications to 
+                                    programming. Ultimately, I plan on pursuing an MBA in the future time after dipping my feet into industry. I'm eager to work with and learn from a 
+                                    group of people as passionate about technology as I look for an internship in 2024 and 2025.
+                                    I'm interested in finding innovative ways for technology to address challenging issues. I've studied AI, cybersecurity, and software development in-depth. 
+                                    I've also worked on projects that put these interests to use in real-world contexts, such as an externship with Beats by Dr. Dre, an SWE internship at 
+                                    Capsher Technologies, a cybersecurity apprenticeship, and multiple AI-related projects.</p>
+                                <ul class="about-info">
+                                    <li class="d-flex"><span>Education: Bachelor of Computer Science @ Texas A&M</span></li>
+                                    <li class="d-flex"><span>Language: English, Telugu, Spanish</span></li>
+                                    <li class="d-flex"><span>Coding Languages: Java, Python, Angular Framework, C#, C, Javascript, SQL, JavaScript, HTML, & SwiftUI</span></li>									
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <p class="about-title">Skills</p>
+                        <div class="skill">
+                            <span>PYTHON</span> <span class="skill-percentage">95%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Java</span> <span class="skill-percentage">85%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>SQL</span> <span class="skill-percentage">70%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Angular Framework</span> <span class="skill-percentage">85%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>C#, C, and C++</span> <span class="skill-percentage">50%</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="transition-section">
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+            </section>
+            <section class="section-resume" id="resume">
+                <div class="container">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-md-10 heading-section text-center animate">
+                            <h1 class="big-title">Resume</h1>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">July 2024 - Present</span>
+                                <h2 class="resume-position">Beats by Dre Consumer Insights Data Analytics Extern</h2>
+                                <span class="resume-company">Beats By Dre</span>
+                                <p class="resume-description mt-4">
+                                    <ul>
+                                        <li>Developed Python code and used Selenium to scrape the web for consumer data, preparing it for analysis</li>
+                                        <li>Conducted an Exploratory Data Analysis and Sentiment Analysis using Pandas and Matplotlib</li>
+                                        <li>Used Gemini AI to extract themes from customer reviews and make API calls directly from Python.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">May 2024 - July 2024</span>
+                                <h2 class="resume-position">Software Engineering Intern</h2>
+                                <span class="resume-company">Capsher Technologies</span>
+                                <p class="resume-description mt-4">
+                                    <ul>
+                                        <li>Implemented a dark mode transition on a multi-layered web application using Angular Frontend and C# backend</li>
+                                        <li>Created pipelines to connect services asynchronously on the app using SignalR</li>
+                                        <li>Displayed information onto 3-dimensional graphs using a DCL input for conversions and ChartJS</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">Dec 2023 - Present</span>
+                                <h2 class="resume-position">Student Technician</h2>
+                                <span class="resume-company">Cybersecurity Apprenticeship Program @ Texas A&M</span>
+                                <p class="resume-description mt-4">
+                                    <ul>
+                                        <li>Assisted in programs to analyze the frequency of various application protocols on the network and its originating location</li>
+                                        <li>Used Crowsdtrike Falcon to maintain and assess real-time alerts shown on the network</li>
+                                        <li>Developed custom parameters and queries on Extrahop and Elastic to analyze threats</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">Sep 2023 - May 2024</span>
+                                <h2 class="resume-position">Video Game and Gamification Research Project Student Researcher</h2>
+                                <span class="resume-company">Live Labs</span>
+                                <p class="resume-description mt-4">
+                                    <ul>
+                                        <li>Created AI-driven data analysis initiatives to convert raw research data into valuable insights.</li>
+                                        <li>Investigated how video games, simulations, and gamification may be used to enhance learning at the high school and college levels</li>
+                                        <li>Actively participated in developing small-scale instructional video game prototypes using Python and C# while coordinating coding skills with research goals.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">Jun 2023 - May 2024</span>
+                                <h2 class="resume-position">Project Lead</h2>
+                                <span class="resume-company">AI Mastermind</span>
+                                <p class="resume-description mt-4">
+                                    <ul>
+                                        <li>Created multiple AI chatbots to replicate JARVIS, analyze supreme court cases, rate movies based on the IMDB Database, and Q&A bots that can read and understand PDFs and online articles</li>
+                                        <li>Developed skills relating to AI, including using transformer models, such as BERT, and chatbot models, such as OpenAI. Included the use of APIs and hugging face models.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">May 2022 - June 2022</span>
+                                <h2 class="resume-position">Website Designer</h2>
+                                <span class="resume-company">NS GLobe Tech Solutions</span>
+                                <p class="resume-description mt-4">
+                                    <ul>
+                                        <li>Designed website and logo- Website link: https://www.nsglobetechsolutions.com/</li>
+                                        <li>Showcased the company's functions, goals, and visions through the website.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <br>
+                    <br>
+        
+                    <div class="row">
+                        <h1 class="big-title">Education</h1>
+                        <div class="underline"></div>
+                    </div>
+                    <br>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="resume-item animate">
+                                <span class="resume-date">2023-2027</span>
+                                <h2 class="resume-position">Bachelor of Computer Science Honors</h2>
+                                <span class="resume-company">Texas A&M</span>
+                                <p class="resume-description mt-4">Honors and Achievements: Deans Honor Roll</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-6 text-center animate">
+                            <p><a href="https://docs.google.com/document/d/1FBrGitW1T_wIdD9n79jR8o2YNU9dtCaB9ac_CHQenA4/edit?usp=sharing" class="btn btn-primary py-4 px-5">Resume</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-projects" id="projects">
+                <div class="container">
+                    <div class="row justify-content-center mb-5 pb-5">
+                        <div class="col-md-7 heading-section text-center animate">
+                            <h1 class="big-title">Projects</h1>
+                            <p>Below are some projects I have worked on by myself and through various hackathons, etc.</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex" style="width: 1300px">
+                        <div class="col-md-4 d-flex animate" style="padding-left: 0 !important;">
+                            <div class="project-entry justify-content-end">
+                                <a href="https://devpost.com/software/stock-sense" class="project-link zoom-effect" style="background-image: url('/Users/nishanthgandhe/Downloads/UpdatedPersonalWebsite/assets/images/proj_1.png');"></a>
+                                <div class="project-text mt-3 float-right d-block">
+                                    <h3 class="project-heading"><a href="https://devpost.com/software/stock-sense">Stock Growth Predictor</a></h3>
+                                    <p>Built a mobile app that utilizes SwiftUI for the front end and then a Python backend with a PythonKit extension for Swift. The app displays stocks that are likely to gain value over years based on the sectors provided using a proprietary stock algorithm made by calculating a linear regression line, 52-week average, moving average, and PE ratio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex animate">
+                            <div class="project-entry justify-content-end">
+                                <a href="https://devpost.com/software/investment-insights-app" class="project-link zoom-effect" style="background-image: url('/Users/nishanthgandhe/Downloads/UpdatedPersonalWebsite/assets/images/proj_2.png');"></a>
+                                <div class="project-text mt-3 float-right d-block">
+                                    <h3 class="project-heading"><a href="https://devpost.com/software/investment-insights-app">Inventory Insights App</a></h3>
+                                    <p>Built a mobile app using SwiftUI, tesseract, and OpenCV that can read receipts, store them, and display them in graphs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex animate">
+                            <div class="project-entry">
+                                <a href="https://github.com/Nishanth-4372/MyProjects/tree/master/PycharmProjects" class="project-link zoom-effect" style="background-image: url('/Users/nishanthgandhe/Downloads/UpdatedPersonalWebsite/assets/images/proj_3.png');"></a>
+                                <div class="project-text mt-3 float-right d-block">
+                                    <h3 class="project-heading"><a href="https://github.com/Nishanth-4372/MyProjects/tree/master/PycharmProjects">Projects incorporating OpenAI and OpenCV</a></h3>
+                                    <p>This is a collection of 7 unique projects that I have worked on. The ArticleReader, PDFReader, SupremeCourtProject, MovieReview, and PythonProject all used the OpenAI API key. These projects included training data specific to a question or idea and getting ChatGPT to be able to answer questions related to those. For example, the article and pdf reader used tesseract to read through files and the openAI would try to answer questions using the text given in those articles. One other notable project is the Dr.Strange project which used openCV to display magic circles on your hand by tracing and calculating the radius of your fingers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 text-center">
+                            <h2 class="more-projects-title" style="text-align: center;">More projects on <span>Github</span></h2>
+                            <p style="text-align: center;"><a href="https://github.com/nishanth-4372" class="btn btn-primary btn-custom">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-contact" id="contact">
+                <div class="container">
+                    <div class="row justify-content-center mb-5 pb-3">
+                        <div class="col-md-7 heading-section text-center animate">
+                            <h1 class="big-title">Contact</h1>
+                            <p>Below are my contact info!</p>
+                        </div>
+                    </div>
+            
+                    <div class="row d-flex contact-info mb-5">
+                        <div class="col-md-6 col-lg-3 d-flex animate">
+                            <div class="contact-box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-address-book"></i>
+                                </div>
+                                <h3 class="mb-4">Address</h3>
+                                <p>Dallas, Texas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex animate">
+                            <div class="contact-box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <h3 class="mb-4">Contact Number</h3>
+                                <p><a href="tel://0101010101">214-686-8162</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex animate">
+                            <div class="contact-box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <h3 class="mb-4">Email Address</h3>
+                                <p><a href="mailto:info@yoursite.com">nishanth.gandhe@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex animate">
+                            <div class="contact-box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-file"></i>
+                                </div>
+                                <h3 class="mb-4">Download Resume</h3>
+                                <p><a href="https://docs.google.com/document/d/1FBrGitW1T_wIdD9n79jR8o2YNU9dtCaB9ac_CHQenA4/edit?usp=sharing">Resume Link</a></p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 text-center animate">
+                            <h2>Have a <span>Question?</span></h2>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejWSM3LxJtbuautFIk7J1-dZB7wPINQ4NZJPqNroZQFtbs5A/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </div>
+                    </div>
+            
+                    <div class="row justify-content-center" style="display: ruby-text;">
+                        <ul class="social-links list-unstyled d-flex justify-content-center align-items-center mb-0">
+                            <li class="animate normal-txt">Find me on</li>
+                            <li class="animate"><a href="https://www.linkedin.com/in/nishanthgandhe/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li class="animate"><a href="https://www.instagram.com/nishanth.gandhe/"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Nishanth's Portfolio</p>
+        </footer>
+    </div>
+    <div class="custom-cursor"></div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

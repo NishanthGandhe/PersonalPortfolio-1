@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "watch:sass": "sass -w assets/css/toggle.scss assets/css/toggle.css",
+    "watch:sass": "sass -w assets/css/transition.scss assets/css/transition.css"
+
+  },
+  
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
