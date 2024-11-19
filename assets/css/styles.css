@@ -275,7 +275,7 @@ h1{
     transition: color 0.3s ease;
 }
 
-.text h2:hover, .text p:hover, .subheading:hover, h1:hover, span:hover, p:hover {
+.text h2:hover, .text p:hover, .subheading:hover, h1:hover, span:hover, p:hover, h2:hover, li:hover, a:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     color: #007BFF !important; /* Blue */
 }
 
@@ -603,7 +603,7 @@ h1{
 }
 
 .project-text a{
-    color: #353a41 !important;
+    color: #353a41;
 }
 
 .project-heading {
@@ -810,7 +810,7 @@ img.dark-mode {
 }
 
 .project-entry.dark-mode .project-text a, .contact-box.dark-mode a{
-    color: white !important;
+    color: white;
 }
 
 #contact.dark-mode .social-links a{
