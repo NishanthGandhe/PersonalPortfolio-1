@@ -5,13 +5,13 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #F8F9FA; /* Light Gray */
-    color: #343A40; /* Dark Gray */
+    background-color: #413d3d; /* Light Gray */
+    color: hsl(210, 10%, 23%) !important; /* Dark Gray */
 }
 
 header {
-    background-color: #343A40; /* Dark Gray */
-    color: white;
+    background-color: #a9d6f0; /* Dark Gray */
+    color: hsl(210, 10%, 23%);
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -21,6 +21,63 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.subheading {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: calc(1rem + min(90px, 15vw));
+    font-weight: 900;
+    letter-spacing: -.175ch;
+    line-height: 0.9;
+    color: white;
+    -webkit-text-stroke: 5px black;
+    text-shadow: 8px 8px black;
+    
+    > span:first-of-type {
+      font-size: .75em;
+    }
+    
+    > div {
+      display: flex;
+      gap: .5ch;
+    }
+  }
+
+  /* * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    block-size: 100%;
+  }
+
+  body {
+    min-block-size: 100%;
+    font-family: system-ui, sans-serif;
+
+    display: grid;
+    place-content: center;
+    gap: 15vmin;
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+    gap: 2vmin;
+    
+    > p {
+      border: 2px solid #aaa;
+      border-radius: 1e3px;
+      padding-inline: 1.5ch;
+      line-height: 1.75;
+    }
+  } */
+
 
 .brand h1 {
     margin: 0;
@@ -39,7 +96,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(35, 153, 237);
     text-decoration: none;
     display: block;
     position: relative;
@@ -64,13 +121,13 @@ nav ul li a:focus::after,
 nav ul li a.active::after {
     width: 100%;
     left: 0;
-    background: white;
+    background: #2b2727;
 }
 
 nav ul li a:hover,
 nav ul li a:focus,
 nav ul li a.active {
-    color: #28A745; /* Green */
+    color: #2b2727; 
     font-weight: bold;
     transform: scale(1.1); /* Slightly enlarge the link on hover and active */
 }
@@ -81,14 +138,13 @@ nav ul li a.active {
 
 #home {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
     position: relative;
     text-align: center;
-    padding: 5rem 2rem 2rem;
-    color: #ffffff; /* Ensure text is readable on the background */
+    padding: 2rem 2rem 2rem;
 }
 
 .home-content {
@@ -165,30 +221,29 @@ h1{
 
 .text {
     flex: 1;
-    text-align: left;
-    padding-right: 20px; /* Adjust padding as needed */
-    font-size: 2rem; /* Make text larger */
+    font-size: 3rem; /* Make text larger */
     animation: fadeIn 2s ease-out; /* Fade in animation */
-    padding-top: 10px;
 }
 
 .image-container {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Push image to the right */
-    align-items: flex-start; /* Align image to the top */
+    justify-content: center; /* Push image to the right */
+    align-items: center; /* Align image to the top */
     padding-top: 0; /* Reduce top padding */
     animation: slideInRight 1s ease-out; /* Slide in from right animation */
+    padding-bottom: 50px;
 }
 
 .image-container img {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
+    width: 600px; /* Adjust size as needed */
+    height: 600px; /* Adjust size as needed */
     border-radius: 50%; /* Make the image circular */
     object-fit: cover;
     animation: slideInLeft 1s ease-out; /* Slide in from left animation */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for hover effect */
-    border: 1px solid #6C757D; /* Gray border */
+    border: 5px solid #353a41; /* Gray border */
+    background-color: #a9d6f0;
 }
 
 .image-container img:hover {
@@ -202,7 +257,7 @@ h1{
     padding: 10px 20px;
     font-size: 1rem;
     color: #ffffff;
-    background-color: #007BFF; /* Blue */
+    background-color: #353a41; /* Blue */
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -221,12 +276,12 @@ h1{
 }
 
 .text h2:hover, .text p:hover, .subheading:hover, h1:hover, span:hover, p:hover {
-    color: #007BFF; /* Blue */
+    color: #007BFF !important; /* Blue */
 }
 
 /* About section styling */
 .about-section {
-    background-color: #f8f9fa; /* Light Gray */
+    background-color: #a9d6f0; /* Light Gray */
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -257,7 +312,6 @@ h1{
 
 .about-content {
     flex: 1 1 50%; /* Allow the content to take up 50% of the width */
-    color: #343a40; /* Dark Gray */
     padding: 20px;
 }
 
@@ -296,7 +350,6 @@ h1{
 
 .skill {
     margin-bottom: 10px;
-    color: black !important;
 }
 
 .skill .progress {
@@ -331,7 +384,6 @@ h1{
     font-weight: 700;
     margin-bottom: 1.5rem !important;
     line-height: 1.5;
-    color: black;
 }
 
 /*This code is forr the special letters*/
@@ -428,60 +480,31 @@ h1{
   }
   
   .word span:nth-child(5).active {
-    animation: toplong 1.5s linear;
+    animation: shrinkjump 1s ease-in-out;
+    transform-origin: bottom center;
   }
   
-  @keyframes toplong {
-    10%, 40% {
-      transform: translateY(-48vh) scaleY(1);
+  @keyframes shrinkjump {
+    10%, 35% {
+      transform: scale(2, .2) translate(0, 0);
     }
     
-    90% {
-      transform: translateY(-48vh) scaleY(4);
+    45%, 50% {
+      transform: scale(1) translate(0, -150px);
+    }
+    
+    80% {
+      transform: scale(1) translate(0, 0);
     }
   }
 
   #resume {
-    padding: 5rem 2rem 2rem;
-}
-
-.big-title {
-    font-size: 2.5rem;
-    color: white; /* Dark color for titles */
-    margin-bottom: 1rem;
-    position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
-}
-
-.big-title.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.big-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: #007bff; /* Primary color underline */
-    position: absolute;
-    bottom: -10px;
-    left: 15px;
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: opacity 1s 0.5s, transform 1s 0.5s;
-}
-
-.big-title.animate::after {
-    opacity: 1;
-    transform: translateX(0);
+    padding: 2rem 2rem 2rem;
 }
 
 .resume-item {
     margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(169 214 240);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -508,7 +531,6 @@ h1{
 .resume-position {
     font-size: 1.25rem;
     font-weight: bold;
-    color: white; /* Dark color for positions */
     margin-top: 0.5rem;
 }
 
@@ -548,46 +570,12 @@ h1{
 }
 
 #projects {
-    padding: 5rem 2rem 2rem;
-}
-
-.big-title {
-    font-size: 2.5rem;
-    color: white; /* Dark color for titles */
-    margin-bottom: 1rem;
-    position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
-}
-
-.big-title.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.big-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: #007bff; /* Primary color underline */
-    position: absolute;
-    bottom: -10px;
-    left: 15px;
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: opacity 1s 0.5s, transform 1s 0.5s;
-}
-
-.big-title.animate::after {
-    opacity: 1;
-    transform: translateX(0);
+    padding: 2rem 2rem 2rem;
 }
 
 .project-entry {
     margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(169 214 240);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -614,12 +602,8 @@ h1{
     border-radius: 8px;
 }
 
-.project-text {
-    color: white;
-}
-
 .project-text a{
-    color: white !important;
+    color: #353a41 !important;
 }
 
 .project-heading {
@@ -653,13 +637,10 @@ h1{
 
 .more-projects-title {
     font-size: 2rem;
-    color: white;
     margin-bottom: 1rem;
 }
 
 .btn-custom {
-    background-color: #007bff;
-    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -673,17 +654,21 @@ h1{
 }
 
 .section-contact {
-    padding: 5rem 2rem 2rem;
+    padding: 2rem 2rem 2rem;
 }
 
 .big-title {
     font-size: 2.5rem;
-    color: white; /* Dark color for titles */
+    color: #353a41;
     margin-bottom: 1rem;
     position: relative;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
+}
+
+.big-title.dark-mode{
+    color: white;
 }
 
 .big-title.animate {
@@ -712,7 +697,7 @@ h1{
 
 .contact-box {
     margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(169 214 240);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -738,12 +723,13 @@ h1{
 
 .social-links {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .social-links .normal-txt {
     margin-right: 1rem;
     font-size: 1.2rem;
-    color: white;
 }
 
 .social-links li {
@@ -752,16 +738,11 @@ h1{
 
 .social-links li a {
     font-size: 1.5rem;
-    color: white;
     transition: color 0.3s ease;
 }
 
 .social-links li a:hover {
     color: #007bff;
-}
-
-.mb-4, .contact-box a{
-    color:white !important;
 }
 
 #contact .text-center{
@@ -782,7 +763,6 @@ section.visible {
 
 footer {
     background-color: rgba(0,0,0,0); /* Dark Gray */
-    color: white;
     text-align: center;
     padding: 1rem;
 }
@@ -790,15 +770,12 @@ footer {
 /* Dark theme */
 body.dark-mode {
     background-color: #121212;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 header.dark-mode {
-    background-color: #1e1e1e;
-}
-
-nav ul li a.dark-mode {
-    color: #ffffff;
+    background-color: #383838;
+    color: white;
 }
 
 nav ul li a.dark-mode::after {
@@ -808,5 +785,38 @@ nav ul li a.dark-mode::after {
 nav ul li a.dark-mode:hover,
 nav ul li a.dark-mode:focus,
 nav ul li a.dark-mode.active {
-    color: #28A745; /* Green */
+    color: white; /* Green */
+}
+
+img.dark-mode {
+    background-color: #383838;
+    border-color: white;
+}
+
+.subheading.dark-mode {
+    color: black;
+    text-shadow: 8px 8px #f1f0f0;
+    -webkit-text-stroke: 5px #f1f0f0;
+}
+
+.about-section.dark-mode {
+    background-color: #383838;
+    color: white;
+}
+
+.resume-item.dark-mode, .project-entry.dark-mode, .contact-box.dark-mode{
+    background: #383838;
+    color: white;
+}
+
+.project-entry.dark-mode .project-text a, .contact-box.dark-mode a{
+    color: white !important;
+}
+
+#contact.dark-mode .social-links a{
+    color: white;
+}
+
+#contact .social-links a{
+    color: rgb(53 58 65);
 }

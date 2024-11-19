@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/toggle.css">
     <link rel="stylesheet" href="assets/css/cursor.css">
     <link rel="stylesheet" href="assets/css/transition.css">
-    <link rel="stylesheet" href="css/icomoon.css">
     <script src="https://kit.fontawesome.com/98c235c84b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,7 +16,7 @@
         <p>Loading</p>
     </div>
     <div id="main-content" style="display: none;">
-        <header>
+        <header class="header" id="header">
             <div class="brand">
                 <h1>Nishanth Gandhe</h1>
                 <script>
@@ -62,12 +61,12 @@
         <main>
             <section id="home" class="home-section">
                 <div class="text">
-                    <span class="subheading">Howdy!</span>
-                    <h2 style="text-align: center;">I'm Nishanth Gandhe </h2>
-                    <p class="intro">A Computer Science student at Texas A&M University with a strong interest in data analytics, cybersecurity, and AI-driven development. My experience spans various projects and internships, where I've applied my skills in programming languages like Python, C#, and Angular to tackle real-world problems and innovate solutions.</p>
-                    <div class=button-row style="text-align: center;">
-                        <a href="#about" class="btn">Learn More</a>
-                        <a href="https://www.linkedin.com/in/nishanthgandhe/" class="btn">Linkedin</a>
+                    <div class="subheading" style="text-align: center !important; font-size: 150px;">Howdy!</div>
+                    <div class="subheading" style="text-align: center; font-size: 130px;">I'm Nishanth Gandhe </div>
+                    <!-- <p class="intro">A Computer Science student at Texas A&M University with a strong interest in data analytics, cybersecurity, and AI-driven development. My experience spans various projects and internships, where I've applied my skills in programming languages like Python, C#, and Angular to tackle real-world problems and innovate solutions.</p> -->
+                    <div class=button-row style="text-align: center; padding-top: 50px;">
+                        <a href="#about" class="btn" style="font-size: 2rem;">Learn More</a>
+                        <a href="https://www.linkedin.com/in/nishanthgandhe/" class="btn" style="font-size: 2rem;">Linkedin</a>
                     </div>
                 </div>
                 <p></p>
@@ -145,7 +144,7 @@
                     </div>
                 </div>
             </section>
-            <section class="transition-section">
+            <!-- <section class="transition-section">
                 <div class="box"></div>
                 <div class="box box2"></div>
                 <div class="box"></div>
@@ -162,7 +161,7 @@
                 <div class="box box2"></div>
                 <div class="box"></div>
                 <div class="box box2"></div>
-            </section>
+            </section> -->
             <section class="section-resume" id="resume">
                 <div class="container">
                     <div class="row justify-content-center pb-5">
@@ -280,7 +279,7 @@
                                 <span class="resume-date">2023-2027</span>
                                 <h2 class="resume-position">Bachelor of Computer Science Honors</h2>
                                 <span class="resume-company">Texas A&M</span>
-                                <p class="resume-description mt-4">Honors and Achievements: Deans Honor Roll</p>
+                                <p>Honors and Achievements: Deans Honor Roll</p>
                             </div>
                         </div>
                     </div>
@@ -293,14 +292,15 @@
                 </div>
             </section>
             <section class="section-projects" id="projects">
-                <div class="container">
+                <div class="container" style="overflow-wrap: normal;">
                     <div class="row justify-content-center mb-5 pb-5">
                         <div class="col-md-7 heading-section text-center animate">
                             <h1 class="big-title">Projects</h1>
                             <p>Below are some projects I have worked on by myself and through various hackathons, etc.</p>
+                            <p>Scroll to see all of them.</p>
                         </div>
                     </div>
-                    <div class="row d-flex" style="width: 1300px">
+                    <div class="row d-flex" style="width: 1300px; overflow: scroll;">
                         <div class="col-md-4 d-flex animate" style="padding-left: 0 !important;">
                             <div class="project-entry justify-content-end">
                                 <a href="https://devpost.com/software/stock-sense" class="project-link zoom-effect" style="background-image: url('assets/images/proj_1.png');"></a>
@@ -312,10 +312,19 @@
                         </div>
                         <div class="col-md-4 d-flex animate">
                             <div class="project-entry justify-content-end">
+                                <a href="https://devpost.com/software/criminality" class="project-link zoom-effect" style="background-image: url('assets/images/proj_6.jpg');"></a>
+                                <div class="project-text mt-3 float-right d-block">
+                                    <h3 class="project-heading"><a href="https://devpost.com/software/criminality">Lie Detector and Emotional Analysis Software</a></h3>
+                                    <p>Designed a webbsite using ReactJS and Python Flask with WebSockets for real-time data streaming. Uses computer's native camera and openCV, DeepFace, and DLib library to place landmarks on faces. Using these landmarks and an algorithm, we can determine the general emotion of a person, the number of times they blink, where their gaze is focusing and if there is any excessive movements or twitching as these are all common signs of lying. We then utilized AWS Transcribe for live transcription and integrated fine-tuned Mistral AI with PyTorch for real-time lie detection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex animate">
+                            <div class="project-entry justify-content-end">
                                 <a href="https://devpost.com/software/investment-insights-app" class="project-link zoom-effect" style="background-image: url('assets/images/proj_2.png');"></a>
                                 <div class="project-text mt-3 float-right d-block">
                                     <h3 class="project-heading"><a href="https://devpost.com/software/investment-insights-app">Inventory Insights App</a></h3>
-                                    <p>Built a mobile app using SwiftUI, tesseract, and OpenCV that can read receipts, store them, and display them in graphs.</p>
+                                    <p>Created a mobile app using SwiftUI. This app uses the iphone camera to take in images, and then implements tesseract, and OpenCV to parse the image into readable text. From there, it uses string manipulation to get the items and uses that for the customer and business owner. For each item that a customer buys, it removes it from the owner's stock to have real-time updates on their stock. Additionally, we take those receipts and store them for the user to look back on. Finally, we take the total price from each reciept and use that to show spending over time and display graphs for users to look at.</p>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +389,7 @@
                                     <i class="fa-solid fa-file"></i>
                                 </div>
                                 <h3 class="mb-4">Download Resume</h3>
-                                <p><a href="assets/Nishanth_Resume_Updated.pdf">Press to Download</a></p>
+                                <p><a href="assets/Nishanth_Resume_Updated.pdf">Click to Download</a></p>
                             </div>
                         </div>
                     </div>
@@ -392,7 +401,7 @@
                         </div>
                     </div>
             
-                    <div class="row justify-content-center" style="display: ruby-text;">
+                    <div class="row justify-content-center">
                         <ul class="social-links list-unstyled d-flex justify-content-center align-items-center mb-0">
                             <li class="animate normal-txt">Find me on</li>
                             <li class="animate"><a href="https://www.linkedin.com/in/nishanthgandhe/"><i class="fa-brands fa-linkedin"></i></a></li>

@@ -4,10 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('dn');
     const body = document.body;
     const toggle = document.querySelector('.toggle');
-    const transitionBackground = document.querySelector('.transition-selection');
+    // const transitionBackground = document.querySelector('.transition-section');
     const loadingPage = document.querySelector('.bar');
     const mainContent = document.getElementById('main-content');
     const customCursor = document.querySelector('.custom-cursor');
+    const header = document.querySelector('header');
+    const img = document.querySelector('img');
+    const subheadings = document.querySelectorAll('.subheading');
+    const aboutSection = document.getElementById('about');
+    const bigTitles = document.querySelectorAll('.big-title');
+    const resumeItems = document.querySelectorAll('.resume-item');
+    const projectItems = document.querySelectorAll('.project-entry');
+    const contactBoxes = document.querySelectorAll('.contact-box');
+    const contact = document.getElementById('contact');
 
     // Dynamically add preloader stylesheet
     const preloaderStylesheet = document.createElement('link');
@@ -88,11 +97,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme toggle
     themeToggle.addEventListener('change', () => {
+        if (!header) {
+            console.error('Header element not found');
+        } else {
+            header.classList.toggle('dark-mode');
+        }
         body.classList.toggle('dark-mode');
-        header.classList.toggle('dark-mode');
-        homeSection.classList.toggle('dark-mode');
+        // homeSection.classList.toggle('dark-mode');
         toggle.classList.toggle('dark-mode');
-        transitionBackground.classList.toggle('dark-mode')
+        // transitionBackground.classList.toggle('dark-mode')
+        img.classList.toggle('dark-mode');
+        aboutSection.classList.toggle('dark-mode');
+        contact.classList.toggle('dark-mode');
+        subheadings.forEach(subheading => {
+            subheading.classList.toggle('dark-mode');
+        });
+        bigTitles.forEach(bigTitle => {
+            bigTitle.classList.toggle('dark-mode');
+        });
+        resumeItems.forEach(resumeItem => {
+            resumeItem.classList.toggle('dark-mode');
+        });
+        projectItems.forEach(projectItem => {
+            projectItem.classList.toggle('dark-mode');
+        });
+        contactBoxes.forEach(contactBox => {
+            contactBox.classList.toggle('dark-mode');
+        });
         navLinks.forEach(link => {
             link.classList.toggle('dark-mode');
         });
