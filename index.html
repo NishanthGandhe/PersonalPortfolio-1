@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/toggle.css">
     <link rel="stylesheet" href="assets/css/cursor.css">
     <link rel="stylesheet" href="assets/css/transition.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/98c235c84b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -286,63 +287,112 @@
         
                     <div class="row justify-content-center mt-5">
                         <div class="col-md-6 text-center animate">
-                            <p><a href="assets/Nishanth_Resume_Updated.pdf" class="btn btn-primary py-4 px-5">Resume</a></p>
+                            <p><a href="assets/Nishanth_Resume.pdf" class="btn btn-primary py-4 px-5">Resume</a></p>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section-projects" id="projects">
-                <div class="container" style="overflow-wrap: normal;">
-                    <div class="row justify-content-center mb-5 pb-5">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
                         <div class="col-md-7 heading-section text-center animate">
                             <h1 class="big-title">Projects</h1>
                             <p>Below are some projects I have worked on by myself and through various hackathons, etc.</p>
-                            <p>Scroll to see all of them.</p>
                         </div>
                     </div>
-                    <div class="row d-flex" style="width: 1300px; overflow: scroll;">
-                        <div class="col-md-4 d-flex animate" style="padding-left: 0 !important;">
-                            <div class="project-entry justify-content-end">
-                                <a href="https://devpost.com/software/stock-sense" class="project-link zoom-effect" style="background-image: url('assets/images/proj_1.png');"></a>
-                                <div class="project-text mt-3 float-right d-block">
+                </div>
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper content">
+            
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://devpost.com/software/stock-sense" class="project-link zoom-effect" style="background-image: url('assets/images/proj_1.png');"></a>
+                                </div>
+                                <div class="project-text">
                                     <h3 class="project-heading"><a href="https://devpost.com/software/stock-sense">Stock Growth Predictor</a></h3>
-                                    <p>Built a mobile app that utilizes SwiftUI for the front end and then a Python backend with a PythonKit extension for Swift. The app displays stocks that are likely to gain value over years based on the sectors provided using a proprietary stock algorithm made by calculating a linear regression line, 52-week average, moving average, and PE ratio.</p>
+                                    <p>Built a mobile app that utilizes SwiftUI for the front end and then a Python backend with a PythonKit extension for Swift. The app displays stocks that are likely to gain value over years based on the sectors provided using a proprietary stock algorithm.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex animate">
-                            <div class="project-entry justify-content-end">
-                                <a href="https://devpost.com/software/criminality" class="project-link zoom-effect" style="background-image: url('assets/images/proj_6.jpg');"></a>
-                                <div class="project-text mt-3 float-right d-block">
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://devpost.com/software/criminality" class="project-link zoom-effect" style="background-image: url('assets/images/proj_6.jpg');"></a>
+                                </div>
+                                <div class="project-text">
                                     <h3 class="project-heading"><a href="https://devpost.com/software/criminality">Lie Detector and Emotional Analysis Software</a></h3>
-                                    <p>Designed a webbsite using ReactJS and Python Flask with WebSockets for real-time data streaming. Uses computer's native camera and openCV, DeepFace, and DLib library to place landmarks on faces. Using these landmarks and an algorithm, we can determine the general emotion of a person, the number of times they blink, where their gaze is focusing and if there is any excessive movements or twitching as these are all common signs of lying. We then utilized AWS Transcribe for live transcription and integrated fine-tuned Mistral AI with PyTorch for real-time lie detection.</p>
+                                    <p>Designed a website using ReactJS and Python Flask with WebSockets for real-time data streaming. Uses computer's native camera and openCV, DeepFace, and DLib library to place landmarks on faces for emotion analysis and lie detection.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex animate">
-                            <div class="project-entry justify-content-end">
-                                <a href="https://devpost.com/software/investment-insights-app" class="project-link zoom-effect" style="background-image: url('assets/images/proj_2.png');"></a>
-                                <div class="project-text mt-3 float-right d-block">
+
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://devpost.com/software/investment-insights-app" class="project-link zoom-effect" style="background-image: url('assets/images/proj_2.png');"></a>
+                                </div>
+                                <div class="project-text">
                                     <h3 class="project-heading"><a href="https://devpost.com/software/investment-insights-app">Inventory Insights App</a></h3>
-                                    <p>Created a mobile app using SwiftUI. This app uses the iphone camera to take in images, and then implements tesseract, and OpenCV to parse the image into readable text. From there, it uses string manipulation to get the items and uses that for the customer and business owner. For each item that a customer buys, it removes it from the owner's stock to have real-time updates on their stock. Additionally, we take those receipts and store them for the user to look back on. Finally, we take the total price from each reciept and use that to show spending over time and display graphs for users to look at.</p>
+                                    <p>Created a mobile app using SwiftUI. This app uses the iPhone camera to take in images, and then implements tesseract and OpenCV to parse the image into readable text for real-time inventory management.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex animate">
-                            <div class="project-entry">
-                                <a href="https://github.com/Nishanth-4372/MyProjects/tree/master/PycharmProjects" class="project-link zoom-effect" style="background-image: url('assets/images/proj_3.png');"></a>
-                                <div class="project-text mt-3 float-right d-block">
-                                    <h3 class="project-heading"><a href="https://github.com/Nishanth-4372/MyProjects/tree/master/PycharmProjects">Projects incorporating OpenAI and OpenCV</a></h3>
-                                    <p>This is a collection of 7 unique projects that I have worked on. The ArticleReader, PDFReader, SupremeCourtProject, MovieReview, and PythonProject all used the OpenAI API key. These projects included training data specific to a question or idea and getting ChatGPT to be able to answer questions related to those. For example, the article and pdf reader used tesseract to read through files and the openAI would try to answer questions using the text given in those articles. One other notable project is the Dr.Strange project which used openCV to display magic circles on your hand by tracing and calculating the radius of your fingers.</p>
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://github.com/NishanthGandhe/PersonalAssistant" class="project-link zoom-effect" style="background-image: url('assets/images/Virtual-AI-assistant.png');"></a>
+                                </div>
+                                <div class="project-text">
+                                    <h3 class="project-heading"><a href="https://github.com/NishanthGandhe/PersonalAssistant">Personal Voice Assistant</a></h3>
+                                    <p>A Python-based voice assistant that responds to spoken commands, provides information, and performs various tasks through speech recognition and synthesis. It can do simple tasks such as tell time or date, tell you the weather, open websites, make jokes, or tell you some fun facts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://github.com/NishanthGandhe/DrStrangeMagicHands" class="project-link zoom-effect" style="background-image: url('assets/images/strange.jpg');"></a>
+                                </div>
+                                <div class="project-text">
+                                    <h3 class="project-heading"><a href="https://github.com/NishanthGandhe/DrStrangeMagicHands">Dr.Strange Magic Hand Cam</a></h3>
+                                    <p>This project creates an interactive augmented reality (AR) application that overlays "Doctor Strange" style magic circles on your hands as you gesture. When you open your palm, the program displays animated magical circles that follow your hand movements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://github.com/NishanthGandhe/ArticleReader" class="project-link zoom-effect" style="background-image: url('assets/images/article.jpg');"></a>
+                                </div>
+                                <div class="project-text">
+                                    <h3 class="project-heading"><a href="https://github.com/NishanthGandhe/ArticleReader">Article Reader + Q&A</a></h3>
+                                    <p>A powerful web application that allows users to extract information from online articles by asking natural language questions. The system uses advanced NLP and transformer models to understand article content and provide accurate answers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content project-entry">
+                                <div class="image">
+                                    <a href="https://github.com/NishanthGandhe/PDFReader" class="project-link zoom-effect" style="background-image: url('assets/images/pdfimage.png');"></a>
+                                </div>
+                                <div class="project-text">
+                                    <h3 class="project-heading"><a href="https://github.com/NishanthGandhe/PDFReader">PDF Reader</a></h3>
+                                    <p>A web application that allows users to upload PDF documents and ask questions about their content. The system uses natural language processing and machine learning to extract relevant answers from the documents.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 text-center">
-                            <h2 class="more-projects-title" style="text-align: center;">More projects on <span>Github</span></h2>
-                            <p style="text-align: center;"><a href="https://github.com/nishanthgandhe" class="btn btn-primary btn-custom">GitHub</a></p>
-                        </div>
+                </div>
+            
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                
+                <div class="row justify-content-center mt-4" style="justify-content: space-around; display: flex;">
+                    <div class="col-md-7 text-center">
+                        <h2 class="more-projects-title">More projects on <span>Github</span></h2>
+                        <p><a href="https://github.com/nishanthgandhe" class="btn btn-primary btn-custom" style="justify-content: center; display: flex;">GitHub</a></p>
                     </div>
                 </div>
             </section>
@@ -389,7 +439,7 @@
                                     <i class="fa-solid fa-file"></i>
                                 </div>
                                 <h3 class="mb-4">Download Resume</h3>
-                                <p><a href="assets/Nishanth_Resume_Updated.pdf">Click to Download</a></p>
+                                <p><a href="assets/Nishanth_Resume.pdf">Click to Download</a></p>
                             </div>
                         </div>
                     </div>
@@ -416,6 +466,7 @@
         </footer>
     </div>
     <div class="custom-cursor"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
